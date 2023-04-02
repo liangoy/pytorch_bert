@@ -14,7 +14,7 @@ from modeling import BertForMaskedLM as B4MLM
 '''
 save
 '''
-bert=BertForMaskedLM.from_pretrained('chinese-roberta-wwm-ext')
+bert=BertForMaskedLM.from_pretrained('hfl/chinese-roberta-wwm-ext')
 torch.save(bert.state_dict(),'bert.bin')
 
 '''
