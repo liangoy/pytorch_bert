@@ -21,7 +21,7 @@ torch.save(bert.state_dict(),'bert.bin')
 load
 '''
 model=B4MLM()
-model.load_state_dict(torch.load('bert.bin'))
+model.load_state_dict(torch.load('bert.bin'),strict=False)
 
 ```
 
